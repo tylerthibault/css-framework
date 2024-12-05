@@ -65,12 +65,12 @@ a:hover {
 }
 
 /* Bold and Strong Text */
-b, strong {
+b, strong, .font-bold {
     font-weight: 700; /* Bolder font weight */
 }
 
 /* Italic Text */
-i, em {
+i, em, .font-italic {
     font-style: italic;
 }
 

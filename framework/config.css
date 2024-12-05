@@ -2,12 +2,18 @@
 :root {
     --color-bg: #ffffff;
     --color-text: #000000;
-    --color-primary: #ffffff;
-    --color-secondary: #363F66;
+    --color-primary: #4682B4;
+    --color-secondary: #D9D9D9;
     --color-border: #dddddd;
     --color-muted: #6f789e;
     --color-code-bg: #f8f9fa;
     --color-link-hover: #0056b3;
+
+    /* Standard Colors */
+    --color-danger: #eb7783;
+    --color-info: #17a2b8;
+    --color-success: #28a745;
+    --color-warning: #ffc107;
 }
 
 /* Dark Mode Variables */
@@ -20,19 +26,10 @@
     --color-muted: #cccccc;
     --color-code-bg: #2e2e3e;
     --color-link-hover: #99ccff;
-}
 
-/* Base Breakpoint Variables */
-:root {
-    --breakpoint-sm: 576px;  /* Small screens (mobile) */
-    --breakpoint-md: 768px;  /* Medium screens (tablet) */
-    --breakpoint-lg: 992px;  /* Large screens (desktop) */
-    --breakpoint-xl: 1200px; /* Extra-large screens (large desktop) */
-}
-
-/* BASE ANIMATION VARIABLES */
-:root {
-    --animation-duration: 0.5s; /* Default duration */
-    --animation-ease: ease-in-out; /* Default easing */
-    --animation-delay: 0s; /* Default delay */
+    /* Standard Colors */
+    --color-danger: var(--color-danger);
+    --color-info: var(--color-info);
+    --color-success: var(--color-success);
+    --color-warning: var(--color-warning);
 }

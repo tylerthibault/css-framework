@@ -120,6 +120,67 @@
     margin-bottom: 1rem;
 }
 
+/* RADIO BUTTONS */
+input[type="radio"] {
+    appearance: none; /* Remove default radio button styling */
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--color-muted);
+    border-radius: 50%;
+    background-color: var(--color-bg);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+input[type="radio"]:checked {
+    border-color: var(--color-secondary);
+    background-color: var(--color-warning);
+}
+
+input[type="radio"]:checked::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-warning);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease;
+}
+
+input[type="radio"]:hover {
+    border-color: var(--color-link-hover);
+}
+
+input[type="radio"]:focus {
+    box-shadow: 0 0 0 3px var(--color-secondary);
+}
+
+input[type="radio"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* LABELS FOR RADIO BUTTONS */
+label {
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 8px;
+    color: var(--color-text);
+}
+
+/* RADIO GROUP */
+.radio-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
 /* MODALS */
 .modal {
     position: fixed;
