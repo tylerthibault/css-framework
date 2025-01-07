@@ -2,7 +2,7 @@
 
 /* Base Typography */
 html {
-    font-size: 16px; /* Set base font size (1rem = 16px) */
+    font-size: 16px; /* Base font size (1rem = 16px) */
     line-height: 1.5; /* Comfortable line height for readability */
     color: var(--color-text); /* Default text color from variables */
 }
@@ -47,92 +47,121 @@ h6 {
 
 /* Paragraphs */
 p {
-    margin-bottom: 1rem; /* Add space below paragraphs */
-    font-size: 1rem; /* Default font size */
-    line-height: 1.75; /* Slightly taller line height for body text */
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.75;
 }
 
-/* Links */
-a {
-    color: var(--color-primary); /* Link color from variables */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.2s ease; /* Smooth color transition */
+.text-reset {
+    padding: 0;
+    margin: 0;
+    
 }
 
-a:hover {
-    color: var(--color-link-hover); /* Hover link color from variables */
-    text-decoration: underline; /* Underline on hover */
+/* Font Sizes */
+.text-xs {
+    font-size: 0.75rem; /* 12px */
 }
 
-/* Bold and Strong Text */
-b, strong, .font-bold {
-    font-weight: 700; /* Bolder font weight */
-}
-
-/* Italic Text */
-i, em, .font-italic {
-    font-style: italic;
-}
-
-/* Small Text */
-small {
+.text-sm {
     font-size: 0.875rem; /* 14px */
 }
 
-/* Blockquote */
-blockquote {
-    margin: 1rem 0;
-    padding: 0.5rem 1rem;
-    border-left: 4px solid var(--color-primary); /* Primary color border */
-    background-color: var(--color-code-bg); /* Background for emphasis */
-    font-style: italic;
-    color: var(--color-muted); /* Muted color for text */
+.text-base {
+    font-size: 1rem; /* 16px */
 }
 
-/* Code */
-code {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: var(--color-code-bg); /* Code background */
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    color: var(--color-text); /* Text color for code */
+.text-lg {
+    font-size: 1.125rem; /* 18px */
 }
 
-pre {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: var(--color-code-bg); /* Code block background */
-    padding: 1rem;
-    border-radius: 4px;
-    overflow-x: auto;
-    color: var(--color-text); /* Text color for code */
-    font-size: 0.9rem;
+.text-xl {
+    font-size: 1.25rem; /* 20px */
 }
 
-/* Lists */
-ul, ol {
-    margin-bottom: 1rem;
+.text-2xl {
+    font-size: 1.5rem; /* 24px */
 }
 
-ul li {
-    list-style: disc;
+.text-3xl {
+    font-size: 1.875rem; /* 30px */
 }
 
-ol li {
-    list-style: decimal;
+.text-4xl {
+    font-size: 2.25rem; /* 36px */
 }
 
-ul > .no-bullet {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.text-5xl {
+    font-size: 3rem; /* 48px */
 }
 
-/* Horizontal Rules */
-hr {
-    margin: 2rem 0;
-    border: 0;
-    opacity: 0.5;
+.text-6xl {
+    font-size: 3.75rem; /* 60px */
+}
+
+/* Responsive Font Sizes */
+@media (min-width: 640px) {
+    .text-lg {
+        font-size: 1.25rem; /* 20px */
+    }
+    .text-xl {
+        font-size: 1.5rem; /* 24px */
+    }
+    .text-2xl {
+        font-size: 1.75rem; /* 28px */
+    }
+    .text-3xl {
+        font-size: 2rem; /* 32px */
+    }
+}
+
+@media (min-width: 1024px) {
+    .text-4xl {
+        font-size: 2.5rem; /* 40px */
+    }
+    .text-5xl {
+        font-size: 3.5rem; /* 56px */
+    }
+    .text-6xl {
+        font-size: 4.5rem; /* 72px */
+    }
+}
+
+/* Font Weight */
+.font-thin {
+    font-weight: 100;
+}
+
+.font-extralight {
+    font-weight: 200;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.font-normal {
+    font-weight: 400;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-extrabold {
+    font-weight: 800;
+}
+
+.font-black {
+    font-weight: 900;
 }
 
 /* Text Alignment */

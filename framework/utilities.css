@@ -1,31 +1,33 @@
 /* DISPLAY UTILITIES */
-.d-none {
-    display: none !important;
-}
 
-.d-inline {
+.inline {
     display: inline !important;
 }
 
-.d-inline-block {
+.inline-block {
     display: inline-block !important;
 }
 
-.d-block {
+.block {
     display: block !important;
 }
 
-.d-flex {
+.flex {
     display: flex !important;
 }
 
-.d-grid {
+.grid {
     display: grid !important;
 }
 
-.d-inline-flex {
+.inline-flex {
     display: inline-flex !important;
 }
+
+.hidden {
+    display: none !important;
+}
+
 
 /* POSITION UTILITIES */
 .position-static {
@@ -116,11 +118,11 @@
     flex-direction: row-reverse !important;
 }
 
-.flex-column {
+.flex-col {
     flex-direction: column !important;
 }
 
-.flex-column-reverse {
+.flex-col-reverse {
     flex-direction: column-reverse !important;
 }
 
@@ -414,6 +416,80 @@
 .h-100 {
     height: 100% !important;
 }
+
+/* HEIGHT UTILITIES IN REM (Unique Prefix: h-rem-) */
+.h-rem-1 {
+    height: 1rem !important; /* 16px */
+}
+
+.h-rem-2 {
+    height: 2rem !important; /* 32px */
+}
+
+.h-rem-3 {
+    height: 3rem !important; /* 48px */
+}
+
+.h-rem-4 {
+    height: 4rem !important; /* 64px */
+}
+
+.h-rem-5 {
+    height: 5rem !important; /* 80px */
+}
+
+.h-rem-6 {
+    height: 6rem !important; /* 96px */
+}
+
+.h-rem-8 {
+    height: 8rem !important; /* 128px */
+}
+
+.h-rem-10 {
+    height: 10rem !important; /* 160px */
+}
+
+.h-rem-12 {
+    height: 12rem !important; /* 192px */
+}
+
+.h-rem-16 {
+    height: 16rem !important; /* 256px */
+}
+
+.h-rem-20 {
+    height: 20rem !important; /* 320px */
+}
+
+.h-rem-24 {
+    height: 24rem !important; /* 384px */
+}
+
+.h-rem-32 {
+    height: 32rem !important; /* 512px */
+}
+
+.h-rem-40 {
+    height: 40rem !important; /* 640px */
+}
+
+.h-rem-48 {
+    height: 48rem !important; /* 768px */
+}
+
+.h-rem-56 {
+    height: 56rem !important; /* 896px */
+}
+
+.h-rem-64 {
+    height: 64rem !important; /* 1024px */
+}
+
+.h-rem-auto {
+    height: auto !important; /* Automatic height */
+}
+
 
 .h-screen {
     height: 100vh !important;
@@ -742,4 +818,11 @@
 
 .shadow-outline {
     box-shadow: 0 0 0 3px var(--color-primary, #007bff) !important;
+}
+
+.no-select {
+    user-select: none !important; /* Prevent text selection */
+    -webkit-user-select: none !important; /* For Safari */
+    -moz-user-select: none !important; /* For Firefox */
+    -ms-user-select: none !important; /* For older IE */
 }

@@ -168,6 +168,10 @@
     background-color: var(--color-muted);
 }
 
+.bg-gray {
+    background-color: #d6d6d6;
+}
+
 .bg-black {
     background-color: black;
 }
